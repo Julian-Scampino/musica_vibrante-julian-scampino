@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Contacto-Música Vibrante</title>
+</head>
+<body>
+    <div class="todo">
+    <header>
+        <h1>Música Vibrante-Escuela de Música</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="oferta.html">OFERTA</a>
+                </li>
+                <li>
+                    <a href="galeria.html">GALERIA</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main__contacto">
+        <section class="seccion__repetitiva">
+            <h2 class="titulo_pagina">CONTACTO</h2>
+            <img src="../imagenes/instrumentos.jpg" alt="instrumentos" class="imagen-repetitiva">
+        </section>
+        <section>
+            <h2 id="leyenda__formulario">Comuníquese con nosotros
+            </h2>
+            <!-- FORMULARIO -->
+            <form action="">
+                <br>
+                <!-- Espacio para Nombre y Apellido -->
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido">
+                <br>
+                <!-- Espacio para Email -->
+                <label for="">Email</label>
+                <input type="email" name="email" placeholder="nombre@ejemplo.com">
+                <br>
+                <!-- Radio -->
+                <div>¿Tiene experiencia?</div>
+                <div>Si</div>
+                <input type="radio" name="experiencia" value="Si">
+                <div>No</div>
+                <input type="radio" name="experiencia" value="No">   
+                <br>
+                <!-- Selector -->
+                <div>Indique su nivel</div>
+                <select name="nivel" id="">
+                    <option value="Alto">Alto</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Bajo">Bajo</option>
+                </select>
+                <br>
+                <!-- Checkbox -->
+                <div>¿Acepta los términos y condiciones?</div>
+                <input type="checkbox" name="acepta" value="1">
+                <br>
+                <!-- Espacio para TEXTAREA -->
+                <label for="mensaje">Deje su mensaje</label>
+                <br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <br>
+                <!-- BOTONES -->
+                <input type="submit" value="Enviar">     
+                <input type="reset" value="Limpiar">
+            </form>
+        </section>
+        <section class="seccion__contacto">
+            <article>
+                <h2>
+                    Información de contacto
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt itaque ut possimus eius quod suscipit pariatur cum at aspernatur repellendus, autem repellat eos maiores soluta tempore tempora omnis nisi ducimus!
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>Copyright</footer>
+    </div>
+</body>
+</html>
