@@ -46,14 +46,21 @@ nav ul li{
     width: 190px;
     border: 5px solid black;
 }
+nav ul li:hover{
+    background-color: hotpink;
+}
+
 header nav ul li a{
+    width: 100%;
+    height: 100%;
     font-size: 30px;
     text-decoration: none;
     color: black;
 }
 /* ---------------------- MAIN INDEX -------------------- */ 
 .main__index{
-    background-color: black;
+    /* background-color: black; */
+    background-image: linear-gradient(to left, rgb(195, 0, 255),black, rgb(195, 0, 255));
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -67,23 +74,36 @@ header nav ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* transform: scaleY(17deg); */
+    transform: skewY(17deg);  
 }
 .titulo_pagina{
     color: rgb(195, 0, 255);
+    /* transform: scaleY(17deg); */
+    
 }
 .imagen-repetitiva{
     width: 50%;
+    transition: transform ease 2s;
+}
+.imagen-repetitiva:hover{
+    transform: scale(2) rotate(180deg);
 }
 /* ----------------- secciones index --------------- */ 
 .seccion-index{
     width: 50%;
     display: flex;
     align-items: center;
+    animation:balance 2s linear alternate infinite;
 }
 .articles__ofertaNosotros-index{
     height: 100%;
     width: 50%;
     background-color: rgb(195, 0, 255);
+}
+@keyframes balance{
+      from{ transform:translateX(-300px) }
+       to{ transform:translateX(300px)}
 }
 .div__imagenes{
     width: 50%;
@@ -116,6 +136,11 @@ header nav ul li a{
 .article__nosotros{
     background-color: rgb(195, 0, 255);
     width: 50%;
+}
+.contenedor__avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #avatar{
     border: 5px solid rgb(195, 0, 255);
