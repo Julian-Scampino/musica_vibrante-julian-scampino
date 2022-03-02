@@ -4,64 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Inicio-Música Vibrante</title>
 </head>
     <body>
         <div class="todo">
             <header>
-                <h1>Música Vibrante-Escuela de Música</h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/oferta.html">OFERTA</a> 
-                        </li>
-                        <li>
-                            <a href="./secciones/galeria.html">GALERIA</a>
-                        </li>
-                        <li>
-                            <a href="./secciones/contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-            </nav>
+                <nav class="navbar navbar-expand-lg navbar-light color-nav">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Música Vibrante-Escuela de Música</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                        <a class="nav-link" href="./secciones/nosotros.html">NOSOTROS</a>
+                        <a class="nav-link" href="./secciones/oferta.html">OFERTA</a>
+                        <a class="nav-link" href="./secciones/galeria.html">GALERIA</a>
+                        <a class="nav-link" href="./secciones/contacto.html">CONTACTO</a>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
             </header>
             <main class="main__index">
                 <section class="seccion__repetitiva">
                     <h2 class="titulo_pagina">INICIO</h2>
                     <img src="./imagenes/instrumentos.jpg" alt="instrumentos" class="imagen-repetitiva">
                 </section>
-                <section class="seccion__oferta-index seccion-index">    
-                    <article class="articles__ofertaNosotros-index">
-                        <h2>
-                            Oferta
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis error rem repellat culpa ipsam, reiciendis eius harum, illum minus quo explicabo enim. Odio placeat error labore, sit laudantium incidunt ipsam.
-                        </p>
-                    </article>
-                    <div class="div__imagenes">
-                    <img src="./imagenes/galeria-guitarra.jpg" alt="guitarra" class="imagen__seccion-index">
+                <div class="card card-estilos" style="width: 18rem;">
+                    <img src="./imagenes/galeria-guitarra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Oferta</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores quo dolorum odio pariatur ex quaerat distinctio aliquid quos molestias voluptatum deleniti, facilis amet expedita doloribus, beatae, in quam cumque!</p>
+                      <a href="./secciones/oferta.html" class="btn btn-primary">Ir a Oferta</a>
                     </div>
-                </section>
-                <section class="seccion__nosotros-index seccion-index">
-                    <article class="articles__ofertaNosotros-index">
-                        <h2>
-                            Nosotros
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores iure corrupti reprehenderit earum nisi id dolorum ullam libero. Eveniet tempore accusantium dolore eos quasi nam aliquam, possimus laudantium mollitia?
-                        </p>
-                    </article>
-                    <div class="div__imagenes">
-                    <img src="./imagenes/galeria-violin.jpg" alt="violin" class="imagen__seccion-index">
+                </div>
+                <div class="card card-estilos" style="width: 18rem;">
+                    <img src="./imagenes/galeria-violin.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nosotros</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repudiandae iure doloribus maiores tempore, ut cumque placeat omnis quisquam? Perspiciatis placeat reprehenderit fuga laborum nihil inventore corporis natus voluptatibus eveniet.</p>
+                      <a href="./secciones/nosotros.html" class="btn btn-primary">Ir a Nosotros</a>
                     </div>
-                </section> 
+                </div>
+
                 <section class="seccion__contacto">
                     <article>
                         <h2>
@@ -75,5 +64,6 @@
             </main>
             <footer>Copyright</footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

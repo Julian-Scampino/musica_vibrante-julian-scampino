@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Contacto-Música Vibrante</title>
 </head>
 <body>
     <div class="todo">
     <header>
-        <h1>Música Vibrante-Escuela de Música</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="oferta.html">OFERTA</a>
-                </li>
-                <li>
-                    <a href="galeria.html">GALERIA</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light color-nav">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Música Vibrante-Escuela de Música</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                <a class="nav-link" href="oferta.html">OFERTA</a>
+                <a class="nav-link" href="galeria.html">GALERIA</a>
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+            </div>
         </nav>
     </header>
     <main class="main__contacto">
@@ -41,47 +39,43 @@
             </h2>
             <!-- FORMULARIO -->
             <form action="">
-                <br>
-                <!-- Espacio para Nombre y Apellido -->
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre">
-                <br>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido">
-                <br>
-                <!-- Espacio para Email -->
-                <label for="">Email</label>
-                <input type="email" name="email" placeholder="nombre@ejemplo.com">
-                <br>
-                <!-- Radio -->
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Dirección de Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+            <div class="form-check">
                 <div>¿Tiene experiencia?</div>
-                <div>Si</div>
-                <input type="radio" name="experiencia" value="Si">
-                <div>No</div>
-                <input type="radio" name="experiencia" value="No">   
-                <br>
-                <!-- Selector -->
-                <div>Indique su nivel</div>
-                <select name="nivel" id="">
-                    <option value="Alto">Alto</option>
-                    <option value="Medio">Medio</option>
-                    <option value="Bajo">Bajo</option>
-                </select>
-                <br>
-                <!-- Checkbox -->
-                <div>¿Acepta los términos y condiciones?</div>
-                <input type="checkbox" name="acepta" value="1">
-                <br>
-                <!-- Espacio para TEXTAREA -->
-                <label for="mensaje">Deje su mensaje</label>
-                <br>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                <br>
-                <!-- BOTONES -->
-                <input type="submit" value="Enviar">     
-                <input type="reset" value="Limpiar">
-            </form>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Si
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    No
+                </label>
+            </div>
+            <div>Indique su nivel</div>
+            <select class="form-select" aria-label="Default select example">
+                Indique su nivel
+                <option value="1">Alto</option>
+                <option value="2">Medio</option>
+                <option value="3">Bajo</option>
+            </select>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Deje su mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class=" text-black enviar" type="submit" >Enviar</button>
+              
         </section>
+    </form>
         <section class="seccion__contacto">
             <article>
                 <h2>
@@ -95,5 +89,6 @@
     </main>
     <footer>Copyright</footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
