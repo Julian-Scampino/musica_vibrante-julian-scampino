@@ -56,6 +56,29 @@ header {
           height: 100%;
           display: inline-block; }
 
+/* -----  MAP-GET  ----- */
+.article__nosotros-maps {
+  color: #00ff22;
+  background-color: blue;
+  height: 450px;
+  width: 500px; }
+
+/* -----  EXTEND  ----- */
+.caja, .caja-2, .caja-3 {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 5px solid pink;
+  color: black; }
+
+.caja-2 {
+  background-color: red; }
+
+/* -----  MIXIN  ----- */
+.caja-3 {
+  color: cyan;
+  background-color: yellow; }
+
 /* ---------------------- MAIN INDEX -------------------- */
 .main__index {
   grid-area: main;

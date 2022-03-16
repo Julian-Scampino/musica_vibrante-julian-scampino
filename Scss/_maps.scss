@@ -1,0 +1,38 @@
+
+
+/* -----  MAP-GET  ----- */
+$probando:(
+    color: #00ff22,
+    background: blue,
+    height: 450px,
+    width: 500px,
+);
+.article__nosotros-maps{
+    color: map-get($map:$probando, $key: "color");
+    background-color: map-get($map: $probando, $key: "background");
+    height: map-get($map: $probando, $key: "height");
+    width: map-get($map: $probando, $key: "width");
+}
+
+/* -----  EXTEND  ----- */
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 5px solid pink;
+    color: black;
+}
+.caja-2{
+    @extend .caja;
+    background-color: red;
+}
+
+/* -----  MIXIN  ----- */
+@mixin colors ($letra, $fondo){
+    color: $letra;
+    background-color: $fondo;
+}
+.caja-3{
+    @extend .caja;
+    @include colors(rgb(0, 255, 255), yellow)
+}
