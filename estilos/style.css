@@ -3,18 +3,20 @@
   margin: 0; }
 
 body {
-  background-image: linear-gradient(to left, #c300ff, black, #c300ff); }
+  background-color: #2e2d2d; }
 
 .todo {
-  height: 200vh;
-  font-family: Arial, Helvetica, sans-serif;
+  /* height: 200vh; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: monospace;
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 1.5fr 15fr 1fr; }
+  grid-template-columns: auto;
+  grid-template-rows: auto auto 100px;
+  background-color: #2e2d2d; }
 
 header {
-  background-color: #c300ff;
+  background-color: #008cff;
   grid-area: header;
   display: flex;
   flex-direction: column;
@@ -24,12 +26,12 @@ header {
     padding: 10px 0px 10px 0px;
     text-align: center;
     color: black;
-    background-color: #c300ff; }
+    background-color: #008cff; }
   header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c300ff; }
+    background-color: #008cff; }
     header nav ul {
       height: 100%;
       list-style-type: none;
@@ -56,28 +58,37 @@ header {
           height: 100%;
           display: inline-block; }
 
-/* -----  MAP-GET  ----- */
-.article__nosotros-maps {
-  color: #00ff22;
-  background-color: blue;
-  height: 450px;
-  width: 500px; }
+/* @import "maps"; */
+/* ----------------- repetitiva --------------- */
+.seccion__repetitiva {
+  /* margin-top: 50px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-image: url(../imagenes/instrumentos-modificado.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover; }
 
-/* -----  EXTEND  ----- */
-.caja, .caja-2, .caja-3 {
-  width: 100px;
-  height: 100px;
-  background-color: white;
-  border: 5px solid pink;
-  color: black; }
+.contenedor__repetitivo {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-.caja-2 {
-  background-color: red; }
+.titulo_pagina {
+  color: #008cff;
+  margin-bottom: 40px; }
 
-/* -----  MIXIN  ----- */
-.caja-3 {
-  color: cyan;
-  background-color: yellow; }
+.texto__repetitivo {
+  color: red;
+  text-align: center; }
 
 /* ---------------------- MAIN INDEX -------------------- */
 .main__index {
@@ -87,41 +98,41 @@ header {
   justify-content: space-between;
   align-items: center; }
 
-/* ----------------- repetitiva --------------- */
-.seccion__repetitiva {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.titulo_pagina {
-  color: #c300ff;
-  margin-bottom: 15px; }
-
-.imagen-repetitiva {
-  width: 50%;
-  transition: transform ease 2s; }
-
-.imagen-repetitiva:hover {
-  transform: scale(1.5) rotate(180deg); }
-
-/* ----------------- secciones index --------------- */
-.seccion-index {
-  width: 50%;
+.seccion__index {
+  width: 100%;
   display: flex;
   align-items: center;
-  min-height: 250px;
-  transition: transform ease 0.2s; }
+  /* transition: transform ease 0.2s; */ }
 
-.seccion-index:hover {
-  transform: scaleY(1.3);
-  box-shadow: 0px 0px 50px 5px #c300ff; }
+/* .seccion__index:hover{
+    transform: scaleY(1.3); ;
+    box-shadow: 0px 0px 50px 5px $colorPrincipal;
+} */
+.seccion__nosotros-index {
+  background-color: #a03131; }
 
-.articles__ofertaNosotros-index {
+.articles__nosotros-index {
   height: 100%;
   width: 50%;
-  background-color: #c300ff; }
+  color: white; }
+
+.seccion__oferta-index {
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+  background-color: #1a1c1d; }
+
+.articles__oferta-index {
+  height: 100%;
+  width: 50%; }
+
+.seccion__galeria-index {
+  background-color: #008cff; }
+
+.articles__galeria-index {
+  height: 100%;
+  width: 50%;
+  /* background-color: rgb(247, 71, 71); */ }
 
 .div__imagenes {
   width: 50%;
@@ -129,11 +140,16 @@ header {
 
 .imagen__seccion-index {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+  opacity: 60%; }
 
-.seccion__contacto {
-  background-color: #c300ff;
-  margin-bottom: 50px; }
+.seccion__contacto-index {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 300px; }
 
 /* ----NOSOTROS---- */
 .main__nosotros {
@@ -151,9 +167,9 @@ header {
   align-items: center; }
 
 .article__nosotros {
-  background-color: #c300ff;
+  background-color: #008cff;
   width: 50%;
-  box-shadow: 0px 0px 50px 5px #c300ff; }
+  box-shadow: 0px 0px 50px 5px #008cff; }
 
 .contenedor__avatar {
   display: flex;
@@ -168,12 +184,12 @@ header {
     transform: translateX(150px); } }
 
 #avatar {
-  border: 5px solid #c300ff;
+  border: 5px solid #008cff;
   width: 200px;
   height: 200px; }
 
 #avatar__director {
-  color: #c300ff; }
+  color: #008cff; }
 
 /* ----OFERTA---- */
 .main__oferta {
@@ -184,7 +200,7 @@ header {
   align-items: center; }
 
 table, caption, tr, th, td {
-  background-color: #c300ff;
+  background-color: #008cff;
   border: 5px double black;
   padding: 10px;
   text-align: center; }
@@ -205,10 +221,10 @@ table, caption, tr, th, td {
 .imagenes_galeria {
   width: 300px;
   height: 150px;
-  border: 5px double #c300ff; }
+  border: 5px double #008cff; }
 
 #video_galeria {
-  border: 5px double #c300ff;
+  border: 5px double #008cff;
   width: 300px;
   height: 150px; }
 
@@ -224,12 +240,12 @@ table, caption, tr, th, td {
   color: #00ff22; }
 
 form {
-  background-color: #c300ff;
+  background-color: #008cff;
   padding: 30px;
   border: 5px solid #00ff22; }
 
 footer {
-  background-color: #c300ff;
+  background-color: #008cff;
   margin: 0;
   padding: 0;
   bottom: 0;
@@ -250,12 +266,19 @@ footer {
     padding: 2px; }
   body div header nav ul li a {
     font-size: 10px; }
-  .seccion-index {
+  .seccion__index {
     flex-direction: column;
     align-items: center;
     margin: 0;
     width: 100%; }
-  .articles__ofertaNosotros-index {
+  .articles__nosotros-index {
+    height: 100%;
+    width: 100%; }
+  .articles__oferta-index {
+    height: 100%;
+    width: 100%; }
+  .articles__galeria-index {
+    height: 100%;
     width: 100%; }
   .div__imagenes {
     width: 100%; }
@@ -283,12 +306,19 @@ footer {
     padding: 4px; }
   body div header nav ul li a {
     font-size: 15px; }
-  .seccion-index {
+  .seccion__index {
     flex-direction: column;
     align-items: center;
     margin: 0;
     width: 100%; }
-  .articles__ofertaNosotros-index {
+  .articles__nosotros-index {
+    height: 100%;
+    width: 100%; }
+  .articles__oferta-index {
+    height: 100%;
+    width: 100%; }
+  .articles__galeria-index {
+    height: 100%;
     width: 100%; }
   .div__imagenes {
     width: 100%; }
