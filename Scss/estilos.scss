@@ -1,7 +1,6 @@
 @import "variables";
 @import "generales";
 @import "header";
-/* @import "maps"; */
 
 /* ----------------- repetitiva --------------- */ 
 .seccion__repetitiva{
@@ -28,17 +27,22 @@
     padding: 10px 0px;
 }
 .titulo_pagina{
-    color: $colorPrincipal;
-    margin-bottom: 40px;
+    color: $azul;
+    font-size: 60px;
+    margin: 30px 0px 40px 0px;
     background-color: rgba(0, 0, 0, 0.250);
+    text-shadow: 0px 0px 3px black;
+    text-decoration: underline;
 }
 .texto__repetitivo{
     color: red;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.250);
+    text-shadow: 0px 0px 3px black;
+    margin-bottom: 30px;
 }
 
-/* ---------------------- MAIN INDEX -------------------- */ 
+/* ---------------------------------------------- MAIN INDEX ---------------------------------------------- */ 
 .main__index{
     grid-area: main;
     display: flex;
@@ -50,8 +54,11 @@
     width: 100%;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    padding: 5%;
 }
-.div-articulos-padding{
+.article__index{
+    box-sizing: border-box;
     padding: 5%;
 }
 .seccion__nosotros-index{
@@ -65,19 +72,20 @@
 .seccion__oferta-index{
     display: flex;
     flex-direction: row-reverse;
-    color: white;
     background-color: rgb(26, 28, 29);
 }
 .articles__oferta-index{
     height: 100%;
     width: 50%;
+    color: white;
 }
 .seccion__galeria-index{
-    background-color: $colorPrincipal;
+    background-color: white;
 }
 .articles__galeria-index{
     height: 100%;
     width: 50%;
+    color: black;
 }
 .div__imagenes{
     width: 50%;
@@ -88,15 +96,27 @@
     height: 100%;
     filter: grayscale(1);
     object-fit: cover;
-    opacity: 60%;
+    /* opacity: 60%; */
 }
+section article div h2{
+    color: red;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.articles__nosotros-index div h2{
+    color: black;
+}
+
+
+/* -------- Seccion Contacto -------- */
 .seccion__contacto-index{
     background-color: black ;
     color: white;
     width: 100%;
     min-height: 300px;
 }
-/* ----NOSOTROS---- */
+
+/* ----------------------------------------------NOSOTROS---------------------------------------------- */
 .main__nosotros{
     grid-area: main;
     display: flex;
@@ -113,9 +133,9 @@
     min-height: 150vh;
 }
 .article__nosotros{
-    background-color: $colorPrincipal;
+    background-color: $azul;
     width: 50%;
-    box-shadow: 0px 0px 50px 5px $colorPrincipal;
+    box-shadow: 0px 0px 50px 5px $azul;
 }
 .contenedor__avatar{
     display: flex;
@@ -146,12 +166,12 @@
     min-height: 150vh;
 }
 table,caption,tr,th,td{
-    background-color: $colorPrincipal;
+    background-color: $azul;
     border: 5px double black;
     padding: 10px;
     text-align: center;
 }
-/* ----GALERIA---- */
+/* ----------------------------------------------GALERIA---------------------------------------------- */
 .main__galeria{
     grid-area: main;
     display: flex;
@@ -169,16 +189,16 @@ table,caption,tr,th,td{
 .imagenes_galeria{
     width: 310px;
     height: 250px;
-    border: 5px double $colorPrincipal;
+    border: 5px double $azul;
     object-fit: cover;
 }
 #video_galeria{
-    border: 5px double $colorPrincipal;
+    border: 5px double $azul;
     width: 310px;
     height: 250px;
     object-fit: cover;
 }
-/* ----CONTACTO---- */
+/* ----------------------------------------------CONTACTO---------------------------------------------- */
 .main__contacto{
     grid-area: main;
     display: flex;
@@ -195,14 +215,14 @@ table,caption,tr,th,td{
     text-align: center;
 }
 form{
-    background-color: $colorPrincipal;
+    background-color: $azul;
     padding: 30px;
     border: 5px solid red;
 }
 
 
 footer{
-    background-color: $colorPrincipal;
+    background-color: $azul;
     margin: 0;
     padding: 0;
     bottom: 0;
@@ -214,7 +234,7 @@ footer{
 }
 /* ---------------------- mobile -------------------- */ 
 @media screen and (max-width: 320px){
-    h1{
+/*     h1{
         font-size: 20px;
     }
     body div header nav ul{
@@ -227,7 +247,7 @@ footer{
     }
     body div header nav ul li a{
         font-size: 10px;
-    }
+    } */
     .seccion__repetitiva{
         font-size: 30px;
     }
@@ -269,7 +289,7 @@ footer{
 }
 /* ---------------------- tablet -------------------- */ 
 @media only screen and (min-width: 321px) and (max-width: 767px){
-    h1{
+/*     h1{
         font-size: 25px;
     }
     body div header nav ul{
@@ -282,7 +302,7 @@ footer{
     }
     body div header nav ul li a{
         font-size: 15px;
-    }
+    } */
     .seccion__repetitiva{
         font-size: 35px;
     }
@@ -315,5 +335,11 @@ footer{
     }
     .article__nosotros{
         width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container-fluid{
+        display: flex;
+        flex-direction: row;
     }
 }

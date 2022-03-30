@@ -1,5 +1,54 @@
 header{
-    background-color: $colorPrincipal;
+    grid-area: header;
+    background-color: black;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.container-fluid{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* -------- Titulo del Header -------- */
+.navbar-light .navbar-brand {
+    color: $azul;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+ .navbar-light .navbar-brand:focus{
+    color: $azul;
+}
+.navbar-light .navbar-brand:hover{
+    color: $azul;
+}
+/* -------- Links del Header -------- */
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    margin-right: 10px;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+    color: $rojoClaro;
+    text-shadow: 0px 0px 10px white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $rojoClaro;
+    text-shadow: 0px 0px 10px white;
+}
+.navbar-light .navbar-nav .nav-link:active{
+    color: $red;
+    text-shadow: 0px 0px 10px $azul;
+
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+
+/* header{
+    background-color: black;
     grid-area: header;
     display: flex;
     flex-direction: column;
@@ -8,14 +57,12 @@ header{
     h1{
         padding: 10px 0px 10px 0px;
         text-align: center;
-        color:black;
-        background-color: $colorPrincipal;
+        color:rgb(255, 255, 255);
     }
     nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $colorPrincipal;
         ul{
             height: 100%;
             list-style-type: none;
@@ -39,14 +86,16 @@ header{
                     text-align: center;
                     font-size: 30px;
                     text-decoration: none;
-                    color: black;
+                    color: white;
                     width: 100%;
                     height: 100%;
                     display: inline-block;
                 }
-
+                
+                
+                
             }
-
+            
         }
     }
-}
+} */

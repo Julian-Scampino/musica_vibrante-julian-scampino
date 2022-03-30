@@ -6,7 +6,7 @@ body {
   background-color: #2e2d2d; }
 
 .todo {
-  font-family: monospace;
+  font-family: sans-serif;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: auto;
@@ -14,49 +14,101 @@ body {
   background-color: #2e2d2d; }
 
 header {
-  background-color: #008cff;
   grid-area: header;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  box-shadow: 0px 0px 20px 2px black; }
-  header h1 {
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    color: black;
-    background-color: #008cff; }
-  header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #008cff; }
-    header nav ul {
-      height: 100%;
-      list-style-type: none;
-      text-align: center;
-      font-size: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-      header nav ul li {
-        width: 190px;
-        height: 30px;
-        padding: 7px;
-        border: 3px solid black; }
-        header nav ul li:hover {
-          background-color: #f875ed; }
-        header nav ul li:active {
-          background-color: #ff00ea; }
-        header nav ul li a {
-          text-align: center;
-          font-size: 30px;
-          text-decoration: none;
-          color: black;
-          width: 100%;
-          height: 100%;
-          display: inline-block; }
+  background-color: black;
+  text-decoration: underline;
+  padding: 10px; }
 
-/* @import "maps"; */
+.container-fluid {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* -------- Titulo del Header -------- */
+.navbar-light .navbar-brand {
+  color: #008cff;
+  font-size: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 3px; }
+
+.navbar-light .navbar-brand:focus {
+  color: #008cff; }
+
+.navbar-light .navbar-brand:hover {
+  color: #008cff; }
+
+/* -------- Links del Header -------- */
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  margin-right: 10px; }
+
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #ff6868;
+  text-shadow: 0px 0px 10px white; }
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ff6868;
+  text-shadow: 0px 0px 10px white; }
+
+.navbar-light .navbar-nav .nav-link:active {
+  color: red;
+  text-shadow: 0px 0px 10px #008cff; }
+
+.navbar-toggler {
+  background-color: white; }
+
+/* header{
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 2px black;
+    h1{
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        color:rgb(255, 255, 255);
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            height: 100%;
+            list-style-type: none;
+            text-align: center;
+            font-size: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                width: 190px;
+                height: 30px;
+                padding: 7px;
+                border: 3px solid black;
+                &:hover{
+                    background-color: rgb(248, 117, 237);
+                }
+                &:active{
+                    background-color: rgb(255, 0, 234);
+                }
+                a{
+                    text-align: center;
+                    font-size: 30px;
+                    text-decoration: none;
+                    color: white;
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                }
+                
+                
+                
+            }
+            
+        }
+    }
+} */
 /* ----------------- repetitiva --------------- */
 .seccion__repetitiva {
   width: 100%;
@@ -82,15 +134,20 @@ header {
 
 .titulo_pagina {
   color: #008cff;
-  margin-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.25); }
+  font-size: 60px;
+  margin: 30px 0px 40px 0px;
+  background-color: rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0px 3px black;
+  text-decoration: underline; }
 
 .texto__repetitivo {
   color: red;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-color: rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 0px 3px black;
+  margin-bottom: 30px; }
 
-/* ---------------------- MAIN INDEX -------------------- */
+/* ---------------------------------------------- MAIN INDEX ---------------------------------------------- */
 .main__index {
   grid-area: main;
   display: flex;
@@ -101,9 +158,12 @@ header {
 .seccion__index {
   width: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5%; }
 
-.div-articulos-padding {
+.article__index {
+  box-sizing: border-box;
   padding: 5%; }
 
 .seccion__nosotros-index {
@@ -117,19 +177,20 @@ header {
 .seccion__oferta-index {
   display: flex;
   flex-direction: row-reverse;
-  color: white;
   background-color: #1a1c1d; }
 
 .articles__oferta-index {
   height: 100%;
-  width: 50%; }
+  width: 50%;
+  color: white; }
 
 .seccion__galeria-index {
-  background-color: #008cff; }
+  background-color: white; }
 
 .articles__galeria-index {
   height: 100%;
-  width: 50%; }
+  width: 50%;
+  color: black; }
 
 .div__imagenes {
   width: 50%;
@@ -140,15 +201,24 @@ header {
   height: 100%;
   filter: grayscale(1);
   object-fit: cover;
-  opacity: 60%; }
+  /* opacity: 60%; */ }
 
+section article div h2 {
+  color: red;
+  text-decoration: underline;
+  margin-bottom: 20px; }
+
+.articles__nosotros-index div h2 {
+  color: black; }
+
+/* -------- Seccion Contacto -------- */
 .seccion__contacto-index {
   background-color: black;
   color: white;
   width: 100%;
   min-height: 300px; }
 
-/* ----NOSOTROS---- */
+/* ----------------------------------------------NOSOTROS---------------------------------------------- */
 .main__nosotros {
   grid-area: main;
   display: flex;
@@ -204,7 +274,7 @@ table, caption, tr, th, td {
   padding: 10px;
   text-align: center; }
 
-/* ----GALERIA---- */
+/* ----------------------------------------------GALERIA---------------------------------------------- */
 .main__galeria {
   grid-area: main;
   display: flex;
@@ -231,7 +301,7 @@ table, caption, tr, th, td {
   height: 250px;
   object-fit: cover; }
 
-/* ----CONTACTO---- */
+/* ----------------------------------------------CONTACTO---------------------------------------------- */
 .main__contacto {
   grid-area: main;
   display: flex;
@@ -264,16 +334,20 @@ footer {
 
 /* ---------------------- mobile -------------------- */
 @media screen and (max-width: 320px) {
-  h1 {
-    font-size: 20px; }
-  body div header nav ul {
-    flex-wrap: wrap; }
-  body div header nav ul li {
-    width: 95px;
-    height: 10px;
-    padding: 2px; }
-  body div header nav ul li a {
-    font-size: 10px; }
+  /*     h1{
+        font-size: 20px;
+    }
+    body div header nav ul{
+        flex-wrap: wrap;
+    }
+    body div header nav ul li{
+        width: 95px;
+        height: 10px;
+        padding: 2px;
+    }
+    body div header nav ul li a{
+        font-size: 10px;
+    } */
   .seccion__repetitiva {
     font-size: 30px; }
   .seccion__index {
@@ -306,16 +380,20 @@ footer {
 
 /* ---------------------- tablet -------------------- */
 @media only screen and (min-width: 321px) and (max-width: 767px) {
-  h1 {
-    font-size: 25px; }
-  body div header nav ul {
-    flex-wrap: wrap; }
-  body div header nav ul li {
-    width: 95px;
-    height: 15px;
-    padding: 4px; }
-  body div header nav ul li a {
-    font-size: 15px; }
+  /*     h1{
+        font-size: 25px;
+    }
+    body div header nav ul{
+        flex-wrap: wrap;
+    }
+    body div header nav ul li{
+        width: 95px;
+        height: 15px;
+        padding: 4px;
+    }
+    body div header nav ul li a{
+        font-size: 15px;
+    } */
   .seccion__repetitiva {
     font-size: 35px; }
   .seccion__index {
@@ -340,3 +418,8 @@ footer {
     padding: 0; }
   .article__nosotros {
     width: 100%; } }
+
+@media screen and (max-width: 992px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: row; } }
