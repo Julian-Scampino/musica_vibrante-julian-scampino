@@ -59,7 +59,10 @@
 }
 .article__index{
     box-sizing: border-box;
-    padding: 5%;
+    padding: 0% 5%;
+    display: flex;
+/*     justify-content: center;
+    align-items: center; */
 }
 .seccion__nosotros-index{
     background-color: rgb(160, 49, 49);
@@ -96,7 +99,6 @@
     height: 100%;
     filter: grayscale(1);
     object-fit: cover;
-    /* opacity: 60%; */
 }
 section article div h2{
     color: red;
@@ -106,8 +108,6 @@ section article div h2{
 .articles__nosotros-index div h2{
     color: black;
 }
-
-
 /* -------- Seccion Contacto -------- */
 .seccion__contacto-index{
     background-color: black ;
@@ -125,7 +125,6 @@ section article div h2{
     align-items: center;
 }
 .seccion__nosotros{
-    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
