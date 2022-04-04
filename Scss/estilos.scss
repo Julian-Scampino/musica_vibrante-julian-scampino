@@ -2,9 +2,7 @@
 @import "generales";
 @import "header";
 
-iframe{
-    display: none;
-}
+
 
 /* ----------------- repetitiva --------------- */ 
 .seccion__repetitiva{
@@ -118,7 +116,44 @@ section article div h2{
     color: white;
     width: 100%;
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
 }
+.seccion__contacto-index hr{
+    border: none;
+    height: 1px;
+    width: 90%;
+    margin: 10px 0px;
+    background-color: white;
+    opacity: 1;
+    color: inherit;
+}
+.seccion__contacto-index article h2{
+    color: red;
+}
+
+.articulos__contacto-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.articulos__contacto-2 div{
+    width: 50%;
+    min-width: 300px;
+}
+.articulos__contacto-2 div iframe{
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
 
 /* ----------------------------------------------NOSOTROS---------------------------------------------- */
 .main__nosotros{
@@ -324,6 +359,9 @@ footer{
     }
     .div__imagenes{
         width: 100%;
+    }
+    .btn-primary {
+        margin-bottom: 30px;
     }
     .seccion__table{
         width: 80%;

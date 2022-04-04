@@ -10,7 +10,7 @@
 header{
     grid-area: header;
     background-color: black;
-    text-decoration: underline;
+    text-decoration: none;
     padding: 10px;
 }
 
@@ -26,6 +26,7 @@ header{
     margin-bottom: 10px;
     letter-spacing: 3px;
     text-align: center;
+    text-decoration: underline;
 }
  .navbar-light .navbar-brand:focus{
     color: $azul;
