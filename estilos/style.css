@@ -119,6 +119,9 @@ header {
         }
     }
 } */
+iframe {
+  display: none; }
+
 /* ----------------- repetitiva --------------- */
 .seccion__repetitiva {
   width: 100%;
@@ -246,14 +249,19 @@ section article div h2 {
   min-height: 150vh; }
 
 .article__nosotros {
-  background-color: #008cff;
   width: 50%;
-  box-shadow: 0px 0px 50px 5px #008cff; }
+  color: white;
+  text-align: center;
+  margin: 40px 0px; }
+
+.article__nosotros h2 {
+  margin-bottom: 20px; }
 
 .contenedor__avatar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0px;
   animation: balance 4s linear alternate infinite; }
 
 @keyframes balance {
@@ -269,6 +277,15 @@ section article div h2 {
 
 #avatar__director {
   color: red; }
+
+.seccion__nosotros hr {
+  border: none;
+  height: 3px;
+  width: 20%;
+  margin: 0;
+  background-color: white;
+  opacity: 1;
+  color: inherit; }
 
 /* ----OFERTA---- */
 .main__oferta {
@@ -344,15 +361,13 @@ footer {
   box-shadow: 0px -5px 10px 1px black; }
 
 /* ---------------------- mobile -------------------- */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 1px) and (max-width: 767px) {
   .container-fluid {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
     align-items: flex-start; }
-  .navbar-light .navbar-brand {
-    letter-spacing: 0px; }
   .seccion__repetitiva {
     font-size: 30px; }
   .seccion__index {
@@ -384,7 +399,7 @@ footer {
     width: 100%; } }
 
 /* ---------------------- tablet -------------------- */
-@media only screen and (min-width: 321px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .seccion__repetitiva {
     font-size: 35px; }
   .seccion__index {
@@ -406,11 +421,4 @@ footer {
   .seccion__table {
     width: 80%; }
   table, caption, tr, th, td {
-    padding: 0; }
-  .article__nosotros {
-    width: 100%; } }
-
-@media screen and (max-width: 992px) {
-  .container-fluid {
-    display: flex;
-    flex-direction: row; } }
+    padding: 0; } }
