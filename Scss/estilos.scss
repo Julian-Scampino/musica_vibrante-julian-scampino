@@ -4,7 +4,7 @@
 
 
 
-/* ----------------- repetitiva --------------- */ 
+/* ----------------- Seccion repetitiva --------------- */ 
 .seccion__repetitiva{
     width: 100%;
     display: flex;
@@ -63,8 +63,6 @@
     box-sizing: border-box;
     padding: 0% 5%;
     display: flex;
-    /*     justify-content: center;
-    align-items: center; */
 }
 .seccion__nosotros-index{
     background-color: rgb(160, 49, 49);
@@ -352,6 +350,9 @@ footer{
     grid-area: footer;
     color: white;
 }
+
+/* ---------------------------------------------- RESPONSIVE---------------------------------------------- */
+
 /* ---------------------- mobile -------------------- */ 
 @media screen and (min-width: 1px) and (max-width: 767px){
 
