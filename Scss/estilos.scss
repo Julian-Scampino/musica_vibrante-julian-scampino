@@ -354,7 +354,7 @@ footer{
 /* ---------------------------------------------- RESPONSIVE---------------------------------------------- */
 
 /* ---------------------- tablet -------------------- */ 
-@media only screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
 
     .seccion__repetitiva{
         font-size: 35px;
@@ -391,7 +391,7 @@ footer{
     }
 }
 /* ---------------------- mobile -------------------- */ 
-@media screen and (min-width: 1px) and (max-width: 767px){
+@media screen and (min-width: 576px) and (max-width: 768px){
 
     .container-fluid{
         display: flex;
@@ -438,5 +438,72 @@ footer{
     }
     table, caption, tr, th, td {
         padding: 25px;
+    }
+}
+/* ---------------------- mobile mas chico -------------------- */ 
+@media screen and (min-width: 1px) and (max-width: 576px){
+
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start;
+    }
+    .seccion__repetitiva{
+        font-size: 30px;
+    }
+    .seccion__index{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+    .articles__nosotros-index{
+        height: 100%;
+        width: 100%;
+ 
+    }
+    .articles__oferta-index{
+        height: 100%;
+        width: 100%;
+    }
+    .articles__galeria-index{
+        height: 100%;
+        width: 100%;
+    }
+    .div__imagenes{
+        width: 100%;
+    }
+    @keyframes balance{
+        from{ transform:translateX(-50px) }
+         to{ transform:translateX(50px)}
+    }
+    .article__nosotros{
+        width: 100%;
+        padding: 40px;
+    }
+    .btn-primary {
+        margin-bottom: 30px;
+    }
+    table, caption, tr, th, td {
+        padding: 13px 0px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    table{
+        width: 85%;
+    }
+    .imagenes_galeria {
+        width: 234px;
+        height: 161px;
+    }
+
+    form{
+        width: 90%;
+        min-width: 1px;
+    }
+    textarea{
+        width: 200px;
     }
 }
