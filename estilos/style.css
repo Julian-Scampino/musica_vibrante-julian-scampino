@@ -47,7 +47,10 @@ header {
   color: #008cff; }
 
 .navbar-light .navbar-brand:hover {
-  color: #008cff; }
+  color: #ff6868; }
+
+.navbar-light .navbar-brand:active {
+  color: red; }
 
 /* -------- Links del Header -------- */
 .navbar-light .navbar-nav .nav-link {
@@ -391,9 +394,19 @@ form {
   text-align: center;
   color: #ff6868;
   border-radius: 40px;
-  box-shadow: 0px 0px 20px 2px #0d6efd;
   width: 40%;
-  min-width: 500px; }
+  min-width: 500px;
+  animation: sombra 3s infinite linear; }
+
+@keyframes sombra {
+  0% {
+    box-shadow: 0px 0px 20px 2px #2e2d2d; }
+  25% {
+    box-shadow: 0px 0px 20px 2px #008cff; }
+  50% {
+    box-shadow: 0px 0px 20px 2px #2e2d2d; }
+  75% {
+    box-shadow: 0px 0px 20px 2px red; } }
 
 footer {
   background-color: black;

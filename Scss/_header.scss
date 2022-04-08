@@ -32,7 +32,10 @@ header{
     color: $azul;
 }
 .navbar-light .navbar-brand:hover{
-    color: $azul;
+    color: $rojoClaro;
+}
+.navbar-light .navbar-brand:active{
+    color: $red;
 }
 /* -------- Links del Header -------- */
 .navbar-light .navbar-nav .nav-link {
